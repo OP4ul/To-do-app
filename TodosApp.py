@@ -9,7 +9,7 @@ while True:
         ''' checked if there's any valid string added after add 
         or there's an empty string'''
 
-        if len(user_input[4:])==0:
+        if len(user_input[4:]) == 0:
             print("Enter a valid command.")
         else:
             todo = user_input[4:]
