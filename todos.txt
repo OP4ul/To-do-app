@@ -1,7 +1,6 @@
-fix the bugs in add
+bugs in add is fixed
 job
 search
-mom cleans
 voldemort
 check2
-shower
+dog

@@ -5,14 +5,17 @@ while True:
     user_input.strip()
 
     if user_input.startswith("add"):
-        try:
+
+        ''' checked if there's any valid string added after add 
+        or there's an empty string'''
+
+        if len(user_input[4:])==0:
+            print("Enter a valid command.")
+        else:
             todo = user_input[4:]
             todos = get_todos()
             todos.append(todo + '\n')
             updated_todos(todos)
-        except ValueError:
-            print("Enter a valid command")
-            continue
 
     elif user_input.startswith("show"):
         try:
@@ -41,6 +44,10 @@ while True:
         try:
             number = int(user_input[8:]) - 1
             todos = get_todos()
+            '''Fix the program for IndexError as well.
+            If a number is taken as input and that's bigger than the number of items,
+            it throws an IndexError. Whenever the program faces this error rather than exiting the 
+            program make it ask for input. '''
             todos_to_remove = todos[number].strip('\n')
             todos.pop(number)
             updated_todos(todos)
