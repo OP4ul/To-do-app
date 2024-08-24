@@ -4,3 +4,6 @@ search
 voldemort
 check2
 dog
+move
+move 2
+move 23
