@@ -1,9 +1,8 @@
 bugs in add is fixed
 job
 search
-voldemort
-check2
-dog
-move
-move 2
-move 23
+Bring back voldemort
+Now? Yes, right now.
+move where?
+Buy groceries
+don't move 
